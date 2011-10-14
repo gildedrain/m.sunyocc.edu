@@ -1,10 +1,47 @@
-body{margin:0 auto;padding:0;font-family:'Cabin','gill sans',verdana,sans-serif;background:#0b4c7f; background:#0b4c7f -webkit-gradient(linear,center top,center bottom,from(#1799fe),color-stop(100%,#0b4c7f)) no-repeat top left;}
+body{margin:0 auto;padding:0;font-family:'Cabin','gill sans',verdana,sans-serif;
+background-color:#0b4c7f;
+background-repeat:no-repeat;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 153, 254, 1.00)), to(rgba(11, 76, 127, 1.00)));
+background-image: -webkit-linear-gradient(top, rgba(23, 153, 254, 1.00), rgba(11, 76, 127, 1.00));
+background-image: -moz-linear-gradient(top, rgba(23, 153, 254, 1.00), rgba(11, 76, 127, 1.00));
+background-image: -o-linear-gradient(top, rgba(23, 153, 254, 1.00), rgba(11, 76, 127, 1.00));
+background-image: -ms-linear-gradient(top, rgba(23, 153, 254, 1.00), rgba(11, 76, 127, 1.00));
+background-image: linear-gradient(top, rgba(23, 153, 254, 1.00), rgba(11, 76, 127, 1.00));
+filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#1799fe', EndColorStr='#0b4c7f');
+}
+
+.emergency p, .announcement p {margin:0; padding:.5em; line-height:1.25em; border:1px solid #fff; border-width:0 0 1px 0; font-style:italic; -webkit-border-image:-webkit-gradient(linear,left center,right center,from(rgba(255,255,255,.0)),color-stop(0.20,rgba(255,255,255,.75)),color-stop(0.80,rgba(255,255,255,.75)),color-stop(100%,rgba(255,255,255,.0))) 0 0 100 0; box-shadow:0 3px 20px #000; text-shadow:0 1px 1px #000;}
+.emergency p {background:#ff0000; color:#fff;}
+.announcement p {display:none; background:#003151; color:#fff;}
+
 #top h1{font-family:times new roman;text-transform:uppercase;font-size:.8em;color:#fff;font-weight:normal;letter-spacing:.1em;background:#003151;margin:0;text-shadow:0 1px 1px #000;}
 #top h1 a {display:block; color:#fff; text-decoration:none;padding:5px;}
 #top h1 a:hover {background:#000; color:#fff; text-shadow:none;}
 #top h1,#top form{border-bottom:1px solid #fff;border-width:0 0 1px 0;-webkit-border-image:-webkit-gradient(linear,left center,right center,from(rgba(255,255,255,.0)),color-stop(0.20,rgba(255,255,255,.75)),color-stop(0.80,rgba(255,255,255,.75)),color-stop(100%,rgba(255,255,255,.0))) 0 0 100 0;box-shadow:0 2px 15px rgba(0,0,0,.75);}
-#top form{padding:10px 5px 5px 5px;background:-webkit-gradient(linear,center top,center bottom,from(rgba(0,0,0,.29)),color-stop(100%,rgba(255,255,255,.29))) repeat-y top left;}
-#top input[type="text"]{vertical-align:text-top; width:75%;border:1px solid rgba(0,0,0,.5); height:20px; border-radius:3px;background:#fff -webkit-gradient(linear,center top,center bottom,from(rgba(0,0,0,.29)),color-stop(100%,rgba(255,255,255,.29))) repeat-y top left;padding:10px;font-size:1em;}
+#top form{padding:10px 5px 5px 5px;
+  background-color:transparent;
+  background-color:rgba(0,0,0,.29);
+  background-repeat:no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.28)), to(rgba(255, 255, 255, 0.28)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#ffffff');
+}
+#top input[type="text"]{vertical-align:text-top; width:75%;border:1px solid rgba(0,0,0,.5); height:20px; border-radius:3px;
+
+  background-color:#fff;
+  background-repeat:no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.28)), to(rgba(255, 255, 255, 0.28)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#ffffff');
+  padding:10px;font-size:1em;}
 #top input[type="submit"]{vertical-align:text-top; display:inline-block;width:45px;height:45px;text-indent:-9999em;border:0;background:transparent url(../images/sprites.png) no-repeat center -1px;margin:0 0 0 5px;}
 
 .section{display:inline-block; vertical-align:text-top;}
@@ -24,11 +61,12 @@ a.news{background-position:center -1090px;}
 a.events{background-position:center -1190px;}
 a.bookstore{background-position:center -1290px;}
 a.smartcard{background-position:center -1390px;}
-.open a.email,.open a.sln,.open a.webaccess,.open a.phonebook,.open a.class_cancellations,.open a.tech_guides,.open a.paying_for_college,.open a.schedule_of_classes,.open a.library,.open a.academic_calendar,.open a.news,.open a.events,.open a.bookstore,.open a.smartcard  {background-color:#fff;color:#222; text-shadow:none;}
+a.facebook{background-position:center -1790px;}
+a.maps{background-position:center -1490px;}
 
-footer a{position:relative; font-size:.9em;display:block;padding:1em .25em 1em .25em;color:rgba(255,255,255,.5);text-decoration:none; border-bottom:1px solid rgba(255,255,255,.3); margin:0;}
+footer a {font-size:.9em;margin:.5em;display:block;padding:1em .25em 1em .5em;color:rgba(255,255,255,.5);text-decoration:none; background:rgba(0,0,0,.5); border-radius:30px; text-align:center;}
 footer a:hover,footer a:active{background:#1799fe;color:#fff;}
-a.m_home {background:#000; color:#1799fe; text-align:center; padding-bottom:3em;}
+a.m_home {background:#000; color:#1799fe; text-align:center; padding-bottom:3em; border-radius:0; margin:0}
 
 
 .content {background:#fff; border-bottom:1px solid #1799fe; margin:0; padding:.5em 0 0 0;}
