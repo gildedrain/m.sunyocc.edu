@@ -24,7 +24,6 @@
       <!--#include virtual="/includes/m_header.htm" -->
     </header>
     <div id="main" role="main">
-      <div class="content">
         <asp:Literal ID="litMenuTitle" runat="server" />
         <form id="Form1" runat="server">
           <div class="menu">
@@ -38,7 +37,6 @@
           <asp:Literal ID="litColType2" runat="server" />
           <CMS:ListSummary ID="ListSummary1" WrapTag="span" runat="server" DisplayXslt="http://students.sunyocc.edu/xmlfiles/ecmnavigation3.xsl" />
           <CMS:FormBlock ID="FormBlock1" DynamicParameter="ekfrm" WrapTag="span" runat="server" />
-        </div>
       </form>
     </div>
     <footer>
