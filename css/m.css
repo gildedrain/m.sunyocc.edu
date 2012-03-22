@@ -10,11 +10,13 @@ background-image: linear-gradient(top, rgba(23, 153, 254, 1.00), rgba(11, 76, 12
 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#1799fe', EndColorStr='#0b4c7f');
 }
 
+.dots, .content .dots {font-size:1px; height:0px; color:#FFF; clear:both; line-height:0; margin:0; padding:0;}
+
 .emergency p, .announcement p {margin:0; padding:.5em; line-height:1.25em; border:1px solid #fff; border-width:0 0 1px 0; font-style:italic; -webkit-border-image:-webkit-gradient(linear,left center,right center,from(rgba(255,255,255,.0)),color-stop(0.20,rgba(255,255,255,.75)),color-stop(0.80,rgba(255,255,255,.75)),color-stop(100%,rgba(255,255,255,.0))) 0 0 100 0; box-shadow:0 3px 20px #000; text-shadow:0 1px 1px #000;}
 .emergency p {background:#ff0000; color:#fff;}
 .announcement p {background:#003151; color:#fff;}
 
-#top h1{font-family:times new roman;text-transform:uppercase;font-size:.8em;color:#fff;font-weight:normal;letter-spacing:.1em;background:#003151;margin:0; padding-left:.5em;text-shadow:0 1px 1px #000;}
+#top h1{font-family:"times new roman";text-transform:uppercase;font-size:.8em;color:#fff;font-weight:normal;letter-spacing:.1em;background:#003151;margin:0; padding-left:.5em;text-shadow:0 1px 1px #000;}
 #top h1 a {display:block; color:#fff; text-decoration:none;padding:5px;}
 #top h1 a:hover {background:#000; color:#fff; text-shadow:none;}
 #top h1,#top form{border-bottom:1px solid #fff;border-width:0 0 1px 0;-webkit-border-image:-webkit-gradient(linear,left center,right center,from(rgba(255,255,255,.0)),color-stop(0.20,rgba(255,255,255,.75)),color-stop(0.80,rgba(255,255,255,.75)),color-stop(100%,rgba(255,255,255,.0))) 0 0 100 0;box-shadow:0 2px 15px rgba(0,0,0,.75);}
@@ -28,10 +30,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#1799fe', EndC
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#ffffff');
 }
 #top input[type="text"]{vertical-align:text-top; width:75%;border:1px solid rgba(0,0,0,.5); height:20px; border-radius:3px;
-
   background-color:#fff;
   background-repeat:no-repeat;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.28)), to(rgba(255, 255, 255, 0.28)));
@@ -40,11 +40,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#1799fe', EndC
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
   background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
   background-image: linear-gradient(top, rgba(0, 0, 0, 0.28), rgba(255, 255, 255, 0.28));
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000000', EndColorStr='#ffffff');
   padding:10px;font-size:1em;}
 #top input[type="submit"]{vertical-align:text-top; display:inline-block;width:45px;height:45px;text-indent:-9999em;border:0;background:transparent url(../images/sprites.png) no-repeat center -1px;margin:0 0 0 5px;}
 
 .section{display:inline-block; vertical-align:text-top;}
+.ie7 .section {display:block; float:left;}
 .action {display:block;width:85px;margin:3px; text-align:center;padding:60px 5px 10px 5px;text-decoration:none;color:#fff;border:1px solid transparent;border-radius:6px;background-color:transparent;background-image:url(../images/sprites.png);background-repeat:no-repeat;background-position:1000px 1000px;text-shadow:0 1px 1px #000;}
 .action:hover{background-color:rgba(255,255,255,.25);border-color:rgba(255,255,255,.5);}
 a.email{background-position:center -90px;}
@@ -70,7 +70,7 @@ footer a {text-decoration:underline;}
 footer a:hover,footer a:active{background:#1799fe;color:#fff;}
 a.m_home {background:#000; color:#1799fe; text-align:center; padding-bottom:3em; border-radius:0; margin:0}
 
-
+.content.landing {background:transparent;}
 .content {background:#fff; border-bottom:1px solid #1799fe; margin:0; padding:.5em 0 0 0;}
 h2, h3 {font-size:1.5em; font-weight:normal;}
 h2, h3, h4, h5, h6 {margin:0; padding:.25em;color:#888; }
@@ -93,3 +93,14 @@ a.more:hover {background:#222; color:#fff; text-decoration:underline;}
 
 a {color:#0067B6;}
 .hide {display:none;}
+
+/* IMPORTED FROM CALENDAR.CSS - full event description view, display single ID */
+.content .WebEventDetail .title {font-size:2em; margin:0em; padding:0 0 0 .5em;}
+.content .WebEventDetail .starttime {font-weight:bold; background:#ffe; border-radius:5px 5px 0 0; border:1px solid #555; padding:1em; border-width:1px 1px 0 1px; margin:0;}
+.content .WebEventDetail .isrecurring {display:inline-block; clear:left; background:red; color:#fff; padding:5px; border-radius:10px; border:1px solid black; font-weight:normal;}
+.content .WebEventDetail .recurrenceinfo {background:#ffe; border:1px solid #555; border-width:0 1px 0 1px; padding:0 1em 0 1em; margin-top:-1em;}
+.content .WebEventDetail .daysofweek {display:none;}
+.content .WebEventDetail .enddate {display:block; margin:-3em 0 0 0;}
+.content .WebEventDetail .location {font-weight:bold; background:#ffe; border:1px solid #555; padding:1em; border-radius:0 0 5px 5px; border-width:0 1px 1px 1px; margin-bottom:1em;}
+.content .WebEventDetail .description {font-weight:bold; margin:0;}
+.content .WebEventDetail .innerdescription {font-weight:normal; line-height:1.4em;}
